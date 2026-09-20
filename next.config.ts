@@ -15,9 +15,6 @@ const nextConfig: NextConfig = {
     ],
     dangerouslyAllowSVG: true,
   },
-  turbopack: {
-    root: "d:/Sree-Jewellery/sree-3d",
-  },
 };
 
 export default nextConfig;

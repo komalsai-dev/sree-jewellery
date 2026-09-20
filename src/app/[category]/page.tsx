@@ -95,7 +95,7 @@ export default function CategoryListingPage() {
         const c = selectedCat.toLowerCase();
         const pCat = (p.category || '').toLowerCase();
         const pSlug = (p.categorySlug || '').toLowerCase();
-        matchCat = pCat === c || pSlug === c || (CATEGORY_MAP[c] && pCat === CATEGORY_MAP[c].toLowerCase());
+        matchCat = pCat === c || pSlug === c || Boolean(CATEGORY_MAP[c] && pCat === CATEGORY_MAP[c].toLowerCase());
       }
 
       return matchMetal && matchCat;
